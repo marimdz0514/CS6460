@@ -1,2 +1,2 @@
 # CS6460
-Content Project
+Content Project Ed Tech

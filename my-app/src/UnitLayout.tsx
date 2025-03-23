@@ -1,11 +1,14 @@
-import Sidebar from '../src/components/Sidebar';
-import '../src/css/Unit.css';
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/app-sidebar"
 
-const UnitLayout = ({ children }: { children: React.ReactNode }) => (
-  <div className="unit-container">
-    <Sidebar />
-    <div className="unit-content">{children}</div>
-  </div>
-);
-
-export default UnitLayout;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <SidebarProvider>
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        {children}
+      </main>
+    </SidebarProvider>
+  )
+}

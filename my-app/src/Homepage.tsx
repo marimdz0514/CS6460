@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Homepage.css'
+import { Button } from "@/components/ui/button"
 
 function Homepage() {
   return (
@@ -36,9 +37,13 @@ function Homepage() {
         </p>
       </section>
 
-      <Link to="/unit1/1.1">
-        <button className="nav-button">Start Course</button>
-      </Link>
+      <div className="flex flex-col items-center justify-center min-h-svh">
+        <Link to="/unit1/1.1">
+          <Button className="start-button">
+            Start the Course
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }

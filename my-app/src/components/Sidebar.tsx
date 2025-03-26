@@ -1,48 +1,61 @@
-import { NavLink } from 'react-router-dom';
-import { courseStructure } from '../data/LessonData'; // Adjust the import path as necessary
-import './Sidebar.css';
+import { NavLink, useLocation } from 'react-router-dom';
+import { courseStructure } from '../data/LessonData';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import './Sidebar.css';
 
 function Sidebar() {
-  const [hoveredUnit, setHoveredUnit] = useState<string | null>(null);
   const location = useLocation();
+  const [openUnit, setOpenUnit] = useState<string | null>(null);
 
-  const currentUnit = location.pathname.split('/')[1]; // e.g., unit1
+  const toggleUnit = (unitId: string) => {
+    setOpenUnit(prev => (prev === unitId ? null : unitId));
+  };
 
   return (
     <div className="sidebar">
       <h3>Contents</h3>
       <ul>
         {Object.entries(courseStructure).map(([unitId, unit]) => {
-          const isOpen = hoveredUnit === unitId || currentUnit === unitId;
+          const isOpen = openUnit === unitId;
 
           return (
-            <li
-              key={unitId}
-              onMouseEnter={() => setHoveredUnit(unitId)}
-              onMouseLeave={() => setHoveredUnit(null)}
-              className="unit-item"
-            >
-              <NavLink to={`/${unitId}/${unit.lessons[0].id}`}>
-                {unit.title}
-              </NavLink>
+            <li key={unitId} className="unit-item">
+              <div className="unit-header">
+                <button
+                  onClick={() => toggleUnit(unitId)}
+                  className="toggle-arrow"
+                >
+                  {isOpen ? '▼' : '▶'}
+                </button>
+                <NavLink to={`/${unitId}/${unit.lessons[0].id}`} className="unit-link">
+                  {unit.title}
+                </NavLink>
+              </div>
 
+              {/* ✅ This renders the lesson list only if open */}
               {isOpen && (
-                <div className="sub-sidebar">
-                  <ul>
-                    {unit.lessons.map((lesson) => (
-                      <li key={lesson.id}>
-                        <NavLink
-                          to={`/${unitId}/${lesson.id}`}
-                          className={({ isActive }) => (isActive ? 'active' : '')}
-                        >
-                          {lesson.id} {lesson.title}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <ul className="sub-sidebar">
+                  {unit.lessons.map((lesson) => (
+                    <li key={lesson.id}>
+                      <NavLink
+                        to={`/${unitId}/${lesson.id}`}
+                        className={({ isActive }) => (isActive ? 'active' : '')}
+                      >
+                        {lesson.title}
+                      </NavLink>
+                    </li>
+                  ))}
+                  {unit.quiz && (
+                    <li key={`${unitId}-quiz`}>
+                      <NavLink
+                        to={`/${unitId}/quiz`}
+                        className={({ isActive }) => (isActive ? 'active' : '')}
+                      >
+                        📘 Quiz
+                      </NavLink>
+                    </li>
+                  )}
+                </ul>
               )}
             </li>
           );
@@ -51,4 +64,5 @@ function Sidebar() {
     </div>
   );
 }
+
 export default Sidebar;

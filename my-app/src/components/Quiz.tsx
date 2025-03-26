@@ -20,7 +20,6 @@ function Quiz({ quiz }: QuizProps) {
 
   return (
     <div className="quiz-container">
-      <h2>Quiz</h2>
       {quiz.map((q, i) => {
         const userAnswer = answers[i];
         const isCorrect = userAnswer === q.correctAnswer;

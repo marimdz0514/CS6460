@@ -1,12 +1,11 @@
 .sidebar {
   width: 240px;
-  background-color: #063970;
-  /* constant dark blue */
+  background-color: #2b417d;
   color: white;
   padding: 20px;
   height: 100vh;
   overflow-y: auto;
-  position: relative;
+  flex-shrink: 0;
 }
 
 .sidebar a {
@@ -18,7 +17,6 @@
 .sidebar a.active {
   text-decoration: underline;
   color: white;
-  /* same color, no change */
   background-color: transparent;
 }
 

@@ -10,7 +10,6 @@ interface QuizProps {
   quiz: QuizQuestion[];
 }
 
-// ✅ Attach the props here:
 function Quiz({ quiz }: QuizProps) {
   const [answers, setAnswers] = useState<Record<number, string>>({});
 

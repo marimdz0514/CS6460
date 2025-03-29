@@ -7,8 +7,8 @@ html, body, #root {
 }
 
 body {
-  display: block; /* Remove flex + centering */
-  background-color: #f0f4f8; /* Light background like your layout */
+  display: block;
+  background-color: #f0f4f8;
 }
 
 * {

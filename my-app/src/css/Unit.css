@@ -21,7 +21,7 @@
   color: #2b417d;
   margin-top: 0;
   text-align: center;
-  white-space: normal;        /* ✅ Allow wrapping */
+  white-space: normal;
   word-wrap: break-word;
 }
 

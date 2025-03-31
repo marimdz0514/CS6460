@@ -40,7 +40,7 @@ function Quiz({ quiz }: QuizProps) {
             ))}
             {userAnswer && (
               <p style={{ color: isCorrect ? 'green' : 'red' }}>
-                {isCorrect ? 'Correct ✅' : 'Try again ❌'}
+                {isCorrect ? 'Correct' : 'Try again'}
               </p>
             )}
           </div>

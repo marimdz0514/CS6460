@@ -53,11 +53,12 @@ function LessonPage() {
     <UnitLayout>
       <div className="top-right-home">
         <Link to="/homepage" title="Go to Homepage">
-          <AiFillHome size={28} color='#2b417d'/>
+          <AiFillHome size={28} color='#657ec2'/>
         </Link>
       </div>
-  
-      <h1>{unit.title} - {lesson.title}</h1>
+      <div className='content-title'>
+        <h1>{lesson.title}</h1>
+      </div>
       {lesson.videoUrl && (
       <div className="responsive-video">
       <iframe
@@ -69,8 +70,8 @@ function LessonPage() {
       ></iframe>
     </div>
       )}
-
-      {lesson.description && <p>{lesson.description}</p>}
+{/* 
+      {lesson.description && <p>{lesson.description}</p>} */}
 
       {lesson.content && (
         <div
@@ -93,7 +94,7 @@ function LessonPage() {
 
       {isFinalLesson && (
         <div className="congrats-message" style={{ marginTop: '40px', fontSize: '1.2rem', textAlign: 'center' }}>
-          <strong>Congratulations!</strong> You've completed the Python course! 🐍✨<br />
+          <strong>Congratulations!</strong> You've completed the Python course!<br />
           Feel proud of your progress — you're officially a beginner Python coder!
         </div>
       )}

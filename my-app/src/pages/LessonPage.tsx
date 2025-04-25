@@ -20,7 +20,9 @@ function LessonPage() {
   const lesson = lessons[lessonIndex];
 
   const isLastLesson = lessonIndex === lessons.length - 1;
-  const isFinalLesson = unitId === 'unit6' && lessonId === '6.4';
+  const unitKeys = Object.keys(courseStructure);
+  const isFinalUnit = unitId === unitKeys[unitKeys.length - 1];
+  const isFinalLesson = isFinalUnit && lessonIndex === lessons.length - 1;
 
   const nextUnitId = `unit${parseInt(unitId.replace('unit', '')) + 1}`;
   const nextLessonRoute = `/${nextUnitId}/${courseStructure[nextUnitId]?.lessons[0]?.id || ''}`;
@@ -53,25 +55,25 @@ function LessonPage() {
     <UnitLayout>
       <div className="top-right-home">
         <Link to="/homepage" title="Go to Homepage">
-          <AiFillHome size={28} color='#657ec2'/>
+          <AiFillHome size={28} color='#657ec2' />
         </Link>
       </div>
       <div className='content-title'>
         <h1>{lesson.title}</h1>
       </div>
       {lesson.videoUrl && (
-      <div className="responsive-video">
-      <iframe
-        src={lesson.videoUrl}
-        title={lesson.title}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
+        <div className="responsive-video">
+          <iframe
+            src={lesson.videoUrl}
+            title={lesson.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       )}
-{/* 
-      {lesson.description && <p>{lesson.description}</p>} */}
+      {/* 
+      {lesson.description && <p>{lesson.description}</p>} */} 
 
       {lesson.content && (
         <div
@@ -91,14 +93,6 @@ function LessonPage() {
           </button>
         )}
       </div>
-
-      {isFinalLesson && (
-        <div className="congrats-message" style={{ marginTop: '40px', fontSize: '1.2rem', textAlign: 'center' }}>
-          <strong>Congratulations!</strong> You've completed the Python course!<br />
-          Feel proud of your progress — you're officially a beginner Python coder!
-        </div>
-      )}
-
       {showQuiz && unit.quiz && (
         <div style={{ marginTop: '40px' }}>
           <Quiz quiz={unit.quiz} />

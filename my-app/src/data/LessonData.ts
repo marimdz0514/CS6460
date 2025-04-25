@@ -1,3 +1,5 @@
+import variableImage from '../assets/variable.png';
+
 export interface Unit {
   title: string;
   lessons: Lesson[];
@@ -26,26 +28,43 @@ export const courseStructure: Record<string, Unit> = {
         title: '1.1 Introduction to Python and Trinket',
         content: `
           <h2>What is Python?</h2>
-          <p>Python is a popular, high-level programming language known for its simple syntax and ease of use. It was created by Guido van Rossum in the late 1980s and officially released in 1991. Guido wanted to create a language that was powerful yet easy to read—something that could help both new and experienced programmers write clear, logical code. Interestingly, Python isn’t named after the reptile—it’s named after the British comedy show Monty Python’s Flying Circus, which Guido enjoyed.
-            One of Python’s greatest strengths is its readability. Unlike some programming languages that use lots of symbols or confusing structures, Python code is more like writing sentences in English. This makes it perfect for beginners who are just starting to learn how to program. Even professional developers often choose Python when they want to prototype quickly or solve problems efficiently.
-            Python is also open-source, which means it’s free to use and constantly improved by a global community of developers. There are thousands of libraries (like tools or add-ons) that extend what Python can do—whether you’re building apps, analyzing data, or creating games. Its flexibility, readability, and large support community make Python one of the most widely used languages in the world today.</p>
+          <p>Python is a super popular programming language that’s known for being easy to learn and fun to use. It was created by a guy named Guido van Rossum in the late 1980s and officially launched in 1991. </p>
+          
+          <p>Fun fact: Python isn’t named after the snake — it’s actually named after a British comedy show called Monty Python’s Flying Circus that Guido thought was hilarious!</p>
+
+          <p>One of the coolest things about Python is how simple and readable it is. Instead of using a lot of weird symbols or complicated stuff, Python looks almost like regular English. That means even if you’re just starting out, you can write real programs without feeling totally lost.</p>
+          <p>Python is also free (yay!) and open-source, which means people all over the world are always making it better. Plus, there are thousands of extra tools (called libraries) you can use to do all kinds of awesome things — like build games, make apps, or even train robots! Thanks to its flexibility and huge community, Python has become one of the most loved programming languages out there.</p>
       
           <h2>What is Python Used For?</h2>
-          <p>Python is one of the most versatile programming languages in the world. It is used by beginners learning to code for the first time and by professionals building powerful software systems. In web development, Python helps create dynamic websites and web apps using frameworks like Django and Flask. Platforms like Instagram and Spotify rely heavily on Python behind the scenes.
-            In data science and machine learning, Python is the go-to language for analyzing large sets of data, creating visualizations, and building predictive models. Tools like pandas, NumPy, and TensorFlow make it easy to work with data and even train artificial intelligence systems.
-            Python is also popular in automation, where it’s used to write scripts that save time by performing repetitive tasks—like organizing files, sending emails, or scraping data from websites. In game development, Python is used to create simple games with libraries like Pygame, making it a fun and accessible choice for beginners.
-            Beyond that, Python is used in cybersecurity to test and strengthen security systems, in robotics to control hardware, and even in education because of its readability and beginner-friendly syntax. Its wide range of real-world applications is part of what makes Python such a valuable language to learn.:</p>
+            <p>Python is like a Swiss Army knife for coding — you can use it for <strong>almost anything</strong>!</p>
+            <ul>
+              <li><strong>Building websites and apps</strong>: Big platforms like <em>Instagram</em> and <em>Spotify</em> use Python behind the scenes to keep everything running smoothly.</li>
+              <li><strong>Data science and AI</strong>: Python helps scientists and engineers <em>analyze tons of data</em>, <em>make cool graphs</em>, and even <em>build smart AI models</em> that can predict things.</li>
+              <li><strong>Automation</strong>: You can write Python scripts to <em>save time</em> by doing boring tasks automatically, like organizing files or grabbing information from websites.</li>
+              <li><strong>Making games</strong>: Python is great for creating simple games using tools like <em>Pygame</em>. Perfect if you want to design your own game someday!</li>
+              <li><strong>Cybersecurity and robotics</strong>: Python is used by experts to <em>test security systems</em> and <em>control robots</em>.</li>
+              <li><strong>Education</strong>: Schools love teaching Python because it’s <em>beginner-friendly</em> and a great way to learn the basics of coding.</li>
+            </ul>
       
-          <h2>What is Trinket?</h2>
-          <p>Trinket (<a href="https://trinket.io" target="_blank">trinket.io</a>) is a browser-based coding platform. You can write and run Python code directly in your browser—no downloads needed!</p>
-          <p>This makes it perfect for learning and teaching programming without needing to install software.</p>
-      
+          <h2>What is Online Python?</h2>
+          <p><a href="https://www.online-python.com/" target="_blank">Online Python</a> is a free, browser-based Python IDE (Integrated Development Environment). It allows you to write, run, and share Python code directly in your web browser—no downloads or installations required!</p>
+          <p>This makes it an excellent tool for learning and practicing Python programming, especially for beginners.</p>
+
+          <h2>Features of Online Python</h2>
+          <ul>
+            <li><strong>Easy to Use:</strong> Simply type your code and click the "Run" button to see the output.</li>
+            <li><strong>Code Sharing:</strong> Share your code with others using the "Share" option, which generates a unique link.</li>
+            <li><strong>Customization:</strong> Choose between light and dark themes to suit your preference.</li>
+            <li><strong>Support for Libraries:</strong> Includes support for popular Python libraries like Pandas and NumPy.</li>
+            <li><strong>Interactive Execution:</strong> Supports real-time input, allowing you to interact with your programs.</li>
+          </ul>
+
           <h2>Try it: Your First Python Code</h2>
-          <p>Let’s print a message to the screen:</p>
+          <p>Let's print a message to the screen:</p>
           <pre><code>print("Hello, world!")</code></pre>
           <p>You can also add comments to your code using the <code>#</code> symbol:</p>
           <pre><code># This is a comment
-      print("Welcome to Python!")</code></pre>
+          print("Welcome to Python!")</code></pre>
         `
       },
       {
@@ -62,10 +81,9 @@ export const courseStructure: Record<string, Unit> = {
       
           <p>You can print multiple things at once by separating them with commas:</p>
           <pre><code>
-      name = "Mariana"
-      print("Welcome,", name)
-          </code></pre>
-          <p>This will print: <code>Welcome, Mariana</code></p>
+          name = "Andy"
+          print("Welcome,", name)</code></pre>
+          <p>This will print: <code>Welcome, Andy</code></p>
       
           <p>The <code>print()</code> function is one of your best tools for debugging—it helps you check what your program is doing and what values are being used. You’ll be using it a lot!</p>
         `
@@ -95,7 +113,8 @@ export const courseStructure: Record<string, Unit> = {
           <p>In Python, a <strong>variable</strong> is a way to store information that your program can use and update later. You can think of a variable like a container or a labeled box that holds data—such as a number, a name, or a setting. Instead of repeating values throughout your code, you can store them in a variable and refer back to them using the variable's name.</p>
       
           <p>To create a variable, you simply give it a name, use the <code>=</code> assignment operator, and assign it a value. For example:</p>
-      
+          
+
           <pre><code>
       name = "Jordan"
       age = 14
@@ -214,7 +233,80 @@ export const courseStructure: Record<string, Unit> = {
       {
         id: '2.1',
         title: '2.1 Strings, Numbers, and Booleans',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        content: `
+        <p>Now that you’ve written your first Python code, let’s explore the building blocks of every program: <strong>data types</strong>! In this lesson, you’ll learn about three of the most common types: <strong>Strings</strong>, <strong>Numbers</strong>, and <strong>Booleans</strong>.</p>
+
+        <h3>Strings</h3>
+        <p>A <strong>string</strong> is a piece of text. It can be a word, a sentence, or even just a letter. In Python, strings are written inside quotes.</p>
+
+        <pre><code>
+        print("Hello, world!")
+        print("Python is fun!")
+        print("123 is also a string!")</code></pre>
+
+        <p>Even though that last line looks like a number, it’s actually a string because it’s inside quotes. Strings can include letters, numbers, symbols, and spaces.</p>
+
+        <p><strong>Try it:</strong> Change the messages and run your own string print statements!</p>
+
+        <h3>Numbers</h3>
+        <p>Python also understands numbers! You can do math with them or just print them out.</p>
+
+        <pre><code>
+        print(5)
+        print(3.14)
+        print(100 + 50)</code></pre>
+
+        <p>There are two main number types in Python:</p>
+        <ul>
+          <li><strong>Integers</strong> (whole numbers like <code>1</code>, <code>100</code>, <code>-25</code>)</li>
+          <li><strong>Floats</strong> (numbers with decimals like <code>3.14</code>, <code>0.5</code>, <code>-2.7</code>)</li>
+        </ul>
+
+        <p><strong>Try it:</strong> Experiment by changing the numbers and operations!</p>
+        <h3>Booleans</h3>
+        <p>A <strong>Boolean</strong> is a special type of data that can only be one of two values:</p>
+        <ul>
+          <li><code>True</code></li>
+          <li><code>False</code></li>
+        </ul>
+
+        <pre><code>
+        print(True) 
+        Print(False)</code></pre>
+
+        <p>You’ll often use Booleans when checking if something is correct or not — like if a password is right, or if a number is bigger than another.</p>
+
+        <pre><code>
+        print(5 > 3)     # This will print True
+        print(10 == 20)  # This will print False
+        print(7 <= 7)    # This will print True</code></pre>
+
+        <p><strong>Try it:</strong> Change the numbers and see what prints out!</p>
+
+        <h3>Quick Summary</h3>
+        <ul>
+          <li><strong>Strings</strong>: Text, inside quotes → <code>"Hello"</code></li>
+          <li><strong>Integers</strong>: Whole numbers → <code>7</code></li>
+          <li><strong>Floats</strong>: Decimal numbers → <code>3.14</code></li>
+          <li><strong>Booleans</strong>: <code>True</code> or <code>False</code></li>
+        </ul>
+
+        <p>These data types are the foundation for writing real Python programs. Once you get the hang of these, you’ll be ready to combine them with logic and create powerful code!</p>
+
+        <h3>Challenge!</h3>
+        <p>Write a program that prints out:</p>
+        <ul>
+          <li>Your name as a string</li>
+          <li>Your favorite number</li>
+          <li>A True/False fact about yourself (like: "I have a pet" → True)</li>
+        </ul>
+
+        <pre><code># Example
+        print("My name is Alex")
+        print(12)
+        print(True)</code></pre>
+
+        <p>Once you’re done, click "Share" on Online Python to get a link and show your teacher or a friend!</p>`
       },
       {
         id: '2.2',
@@ -413,11 +505,6 @@ export const courseStructure: Record<string, Unit> = {
         title: '7.2 Breaking Down Problems into Smaller Steps',
         videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       },
-      {
-        id: '7.3',
-        title: '7.3 Reviewing Student Projects and Providing Feedback',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      },
     ],
     quiz: [
       {
@@ -437,4 +524,118 @@ export const courseStructure: Record<string, Unit> = {
       },
     ]
   },
+  unit8: {
+    title: 'Unit 8: Coding with Turtle',
+    lessons: [
+      {
+        id: '8.1',
+        title: '8.1 Getting Started with Trinket for Turtle Projects',
+        content: `
+          <h2>Welcome to Trinket!</h2>
+          <p>Before you start creating amazing Turtle art, you’ll need a way to run and share your Python code online. That’s where <a href="https://trinket.io/" target="_blank">Trinket</a> comes in!</p>
+      
+          <h3> What is Trinket?</h3>
+          <p>Trinket is a free, web-based platform that lets you write and run Python code right in your browser—no downloads needed. It’s especially useful for Turtle graphics because it supports <code>import turtle</code> and lets you see your drawings instantly.</p>
+      
+          <h3>How to Get Started:</h3>
+          <ol>
+            <li>Go to <a href="https://trinket.io/" target="_blank">https://trinket.io/</a></li>
+            <li>Click <strong>"Start coding"</strong> or <strong>"Sign Up"</strong> (optional but helpful to save your work)</li>
+            <li>Choose <strong>"New Trinket" → "Python with Turtle"</strong></li>
+            <li>Start typing your code! You’ll see a drawing window on the right where your turtle art appears.</li>
+          </ol>
+      
+          <h3>Why Use Trinket?</h3>
+          <ul>
+            <li>It’s free to use</li>
+            <li>Works in any browser—no installation</li>
+            <li>Perfect for Turtle graphics projects</li>
+            <li>You can share your work with a simple link!</li>
+          </ul>
+      
+          <p>Now that you’re set up on Trinket, you’re ready to dive into creative coding with Turtle!</p>
+        `
+      },
+      {
+        id: '8.2',
+        title: '8.2 Create Your Own Turtle Art with Loops, Functions, and Random Colors',
+        content: `
+          <h2>Welcome to Your Final Turtle Art Challenge!</h2>
+          <p>In this lesson, you'll put your coding skills to work by designing a unique drawing using <strong>loops</strong>, <strong>functions</strong>, and the <strong><code>random</code> module</strong>.</p>
+  
+          <h3>New Concept: <code>import random</code></h3>
+          <p>The <code>random</code> module lets your code make choices on its own! You can use it to pick a random color like this:</p>
+          <pre><code>
+  import turtle
+  import random
+  
+  colors = ["red", "blue", "green", "purple", "orange", "pink"]
+  t = turtle.Turtle()
+  
+  def draw_shape():
+      for _ in range(36):
+          t.color(random.choice(colors))
+          t.forward(100)
+          t.right(170)
+  
+  draw_shape()
+          </code></pre>
+  
+          <h3>Your Mission:</h3>
+          <ul>
+            <li>Use a <strong>loop</strong> to draw a shape multiple times</li>
+            <li>Organize your code with at least one <strong>function</strong></li>
+            <li>Apply <strong><code>random.choice()</code></strong> to change colors each time</li>
+            <li>Add your own twist—it's your project!</li>
+          </ul>
+  
+          <p>Have fun and get creative! When you're done, show off your design to the class or your family!</p>
+        `
+      }
+    ],
+    quiz: [
+      {
+        question: 'What is the purpose of the random module in Python?',
+        options: [
+          'To create infinite loops',
+          'To access web data',
+          'To allow the computer to make random choices',
+          'To save your code automatically'
+        ],
+        correctAnswer: 'To allow the computer to make random choices',
+      },
+      {
+        question: 'Which line correctly uses the random module to pick a color?',
+        options: [
+          'color = colors.pick()',
+          'color = random.select(colors)',
+          'color = random.choice(colors)',
+          'color = choose.random(colors)'
+        ],
+        correctAnswer: 'color = random.choice(colors)',
+      },
+      {
+        question: 'Why do we use functions in our code?',
+        options: [
+          'To make code run slower',
+          'To organize and reuse blocks of code',
+          'To make it harder to understand',
+          'To store lists of data'
+        ],
+        correctAnswer: 'To organize and reuse blocks of code',
+      },
+    ]
+  },
+  unit9: {
+    title: 'Final Projects',
+    lessons: [
+      {
+        id: '9.2',
+        title: 'Final Project Showcase',
+        content: `
+        <h2>Final Project Showcase</h2>
+        `
+      }
+    ],
+  }
 };

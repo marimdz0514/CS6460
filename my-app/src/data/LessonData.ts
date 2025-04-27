@@ -276,9 +276,45 @@ export const courseStructure: Record<string, Unit> = {
         correctAnswer: "#",
       },
       {
-        question: "Which of these is a valid variable name in Python?",
-        options: ["1name", "my-name", "my_name", "my name"],
-        correctAnswer: "my_name",
+        question: "What is the correct way to write a variable in Python?",
+        options: ["5 = age", "age = 5", "age : 5", "age -> 5"],
+        correctAnswer: "age = 5",
+      },
+      {
+        question: "Which of the following is a correct variable name?",
+        options: ["2name", "name_2", "name-2", "name 2"],
+        correctAnswer: "name_2",
+      },
+      {
+        question: "Which keyword is used to define a function in Python?",
+        options: ["function", "def", "fun", "define"],
+        correctAnswer: "def",
+      },
+      {
+        question: 'What will this code print?\nprint("Hello, world!")',
+        options: [
+          "Hello world!",
+          "hello world!",
+          "Hello, world!",
+          "hello, World!",
+        ],
+        correctAnswer: "Hello, world!",
+      },
+      {
+        question: "Which of these is NOT a correct way to name a variable?",
+        options: ["first_name", "_score", "user-age", "totalPoints"],
+        correctAnswer: "user-age",
+      },
+      {
+        question:
+          "Which platform lets you run Python code directly in a browser without installing anything?",
+        options: [
+          "Online Python",
+          "Google Drive",
+          "Python Studio",
+          "Web Runner",
+        ],
+        correctAnswer: "Online Python",
       },
     ],
   },
@@ -664,6 +700,36 @@ export const courseStructure: Record<string, Unit> = {
         options: ["Nothing", "Error", "No", "Yes"],
         correctAnswer: "Yes",
       },
+      {
+        question: "What is the result of this expression?\n\n5 + 3 * 2",
+        options: ["16", "11", "13", "10"],
+        correctAnswer: "11",
+      },
+      {
+        question: "Which data type would you use for True or False values?",
+        options: ["Integer", "Float", "Boolean", "String"],
+        correctAnswer: "Boolean",
+      },
+      {
+        question: "Which symbol is used to check if two values are equal?",
+        options: ["=", "==", "!=", ">="],
+        correctAnswer: "==",
+      },
+      {
+        question: "What will this print?\n\nprint(3 > 7)",
+        options: ["True", "False", "Error", "None"],
+        correctAnswer: "False",
+      },
+      {
+        question: 'What does this print?\n\nprint("5" + "3")',
+        options: ["8", "53", "Error", "5 3"],
+        correctAnswer: "53",
+      },
+      {
+        question: "Which of these is an example of a string in Python?",
+        options: ["5", '"5"', "True", "5.0"],
+        correctAnswer: '"5"',
+      },
     ],
   },
   unit3: {
@@ -979,6 +1045,41 @@ else:
         options: ["List", "Set", "Dictionary", "Tuple"],
         correctAnswer: "Tuple",
       },
+      {
+        question: "Which of these will create a set with 3 elements?",
+        options: [
+          "{1, 2, 3}",
+          "[1, 2, 3]",
+          "(1, 2, 3)",
+          "{1: 'one', 2: 'two', 3: 'three'}",
+        ],
+        correctAnswer: "{1, 2, 3}",
+      },
+      {
+        question: "What happens if you try to modify a tuple?",
+        options: [
+          "It changes successfully",
+          "It raises an error",
+          "It adds a new item",
+          "It deletes an item",
+        ],
+        correctAnswer: "It raises an error",
+      },
+      {
+        question: "Which method adds an item to a list?",
+        options: ["add()", "insert()", "append()", "push()"],
+        correctAnswer: "append()",
+      },
+      {
+        question: "What will this print?\n\nprint(len([10, 20, 30]))",
+        options: ["2", "3", "30", "None"],
+        correctAnswer: "3",
+      },
+      {
+        question: "Which is the correct way to create an empty dictionary?",
+        options: ["[]", "()", "{}", "dict()"],
+        correctAnswer: "dict()",
+      },
     ],
   },
   unit4: {
@@ -1282,6 +1383,39 @@ for name in birthdays:
           "It depends",
         ],
         correctAnswer: "Only inside the function",
+      },
+      {
+        question:
+          "What does a function return if there is no return statement?",
+        options: ["0", "None", "Error", "True"],
+        correctAnswer: "None",
+      },
+      {
+        question: "What is the correct way to call a function named `greet`?",
+        options: ["greet", "call greet()", "greet()", "function greet()"],
+        correctAnswer: "greet()",
+      },
+      {
+        question:
+          "Which keyword do you use to get a value back from a function?",
+        options: ["send", "return", "yield", "output"],
+        correctAnswer: "return",
+      },
+      {
+        question:
+          "What will this code print?\n\n```python\ndef add(x, y):\n    return x + y\n\nprint(add(2, 3))\n```",
+        options: ["5", "6", "23", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "Which of these is a correct function definition?",
+        options: [
+          "function greet():",
+          "def greet[]:",
+          "def greet():",
+          "define greet()",
+        ],
+        correctAnswer: "def greet():",
       },
     ],
   },
@@ -1595,6 +1729,33 @@ print("Heroes only I picked:", my_heroes - friend_heroes)
         question: "Which of these is an immutable type?",
         options: ["List", "Set", "Dictionary", "Tuple"],
         correctAnswer: "Tuple",
+      },
+      {
+        question: "Which method adds an item to a list?",
+        options: ["add()", "push()", "append()", "insert()"],
+        correctAnswer: "append()",
+      },
+      {
+        question:
+          "Which of these data types automatically removes duplicate values?",
+        options: ["List", "Tuple", "Set", "Dictionary"],
+        correctAnswer: "Set",
+      },
+      {
+        question: "How do you create an empty list?",
+        options: ["[]", "()", "{}", "empty()"],
+        correctAnswer: "[]",
+      },
+      {
+        question: "Which syntax correctly defines a tuple with three items?",
+        options: ["(1, 2, 3)", "[1, 2, 3]", "{1, 2, 3}", "1, 2, 3"],
+        correctAnswer: "(1, 2, 3)",
+      },
+      {
+        question:
+          "What will this print?\n\n```python\nmy_list = [10, 20, 30]\nprint(len(my_list))\n```",
+        options: ["2", "3", "30", "Error"],
+        correctAnswer: "3",
       },
     ],
   },
@@ -1978,20 +2139,52 @@ print("Rounded up:", math.ceil(number))
     ],
     quiz: [
       {
-        question: "Which data type stores values in key-value pairs?",
-        options: ["List", "Tuple", "Set", "Dictionary"],
-        correctAnswer: "Dictionary",
+        question: "Which keyword is used to define a function in Python?",
+        options: ["function", "define", "def", "fun"],
+        correctAnswer: "def",
+      },
+      {
+        question: "What keyword allows a function to send a value back?",
+        options: ["send", "return", "output", "back"],
+        correctAnswer: "return",
+      },
+      {
+        question: "What does the built-in function `len()` do?",
+        options: [
+          "Finds the biggest number",
+          "Finds the length of something",
+          "Prints something",
+          "Adds two numbers",
+        ],
+        correctAnswer: "Finds the length of something",
       },
       {
         question:
-          "How do you access the first element in a list called `colors`?",
-        options: ["colors[1]", "colors(0)", "colors[0]", "colors.first"],
-        correctAnswer: "colors[0]",
+          "Which Python library can you use to work with random numbers?",
+        options: ["math", "random", "numbers", "randomizer"],
+        correctAnswer: "random",
       },
       {
-        question: "Which of these is an immutable type?",
-        options: ["List", "Set", "Dictionary", "Tuple"],
-        correctAnswer: "Tuple",
+        question:
+          'What is the output of this code?\n\n```python\nprint(len("Python"))\n```',
+        options: ["5", "6", "7", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "How do you correctly call a function named `greet`?",
+        options: ["greet()", "greet", "call greet", "function greet"],
+        correctAnswer: "greet()",
+      },
+      {
+        question:
+          "Which library would you import to use square root calculations?",
+        options: ["random", "math", "numbers", "sqrt"],
+        correctAnswer: "math",
+      },
+      {
+        question: "Which built-in function turns a string into an integer?",
+        options: ["str()", "int()", "float()", "bool()"],
+        correctAnswer: "int()",
       },
     ],
   },
@@ -2067,47 +2260,205 @@ print("Rounded up:", math.ceil(number))
     ],
     quiz: [
       {
-        question: "What is the purpose of the random module in Python?",
+        question: "What Python module is used to draw shapes and graphics?",
+        options: ["random", "turtle", "graphics", "shapes"],
+        correctAnswer: "turtle",
+      },
+      {
+        question: "Which command moves the turtle forward?",
         options: [
-          "To create infinite loops",
-          "To access web data",
-          "To allow the computer to make random choices",
-          "To save your code automatically",
+          "turtle.move()",
+          "turtle.run()",
+          "turtle.forward()",
+          "turtle.go()",
         ],
-        correctAnswer: "To allow the computer to make random choices",
+        correctAnswer: "turtle.forward()",
+      },
+      {
+        question: "Which command turns the turtle to the right?",
+        options: [
+          "turtle.right()",
+          "turtle.turnRight()",
+          "turtle.rotate()",
+          "turtle.turn()",
+        ],
+        correctAnswer: "turtle.right()",
+      },
+      {
+        question: "What does `turtle.penup()` do?",
+        options: [
+          "Makes the turtle go faster",
+          "Lifts the pen so the turtle moves without drawing",
+          "Draws a pen shape",
+          "Changes the turtle’s color",
+        ],
+        correctAnswer: "Lifts the pen so the turtle moves without drawing",
+      },
+      {
+        question: "Which command would you use to change the turtle’s color?",
+        options: [
+          "turtle.paint()",
+          "turtle.color()",
+          "turtle.fill()",
+          "turtle.shade()",
+        ],
+        correctAnswer: "turtle.color()",
+      },
+      {
+        question: "What happens if you call `turtle.circle(50)`?",
+        options: [
+          "The turtle draws a square",
+          "The turtle draws a circle with radius 50",
+          "The turtle moves 50 steps",
+          "The turtle turns around 50 degrees",
+        ],
+        correctAnswer: "The turtle draws a circle with radius 50",
       },
       {
         question:
-          "Which line correctly uses the random module to pick a color?",
+          "What must you call at the end of your turtle program to keep the window open?",
         options: [
-          "color = colors.pick()",
-          "color = random.select(colors)",
-          "color = random.choice(colors)",
-          "color = choose.random(colors)",
+          "turtle.start()",
+          "turtle.hold()",
+          "turtle.done()",
+          "turtle.end()",
         ],
-        correctAnswer: "color = random.choice(colors)",
-      },
-      {
-        question: "Why do we use functions in our code?",
-        options: [
-          "To make code run slower",
-          "To organize and reuse blocks of code",
-          "To make it harder to understand",
-          "To store lists of data",
-        ],
-        correctAnswer: "To organize and reuse blocks of code",
+        correctAnswer: "turtle.done()",
       },
     ],
   },
   unit8: {
-    title: "Final Projects",
+    title: "Final Exam",
     lessons: [
       {
         id: "8.2",
-        title: "Final Project Showcase",
-        content: `
-        <h2>Final Project Showcase</h2>
-        `,
+        title: "",
+      },
+    ],
+    quiz: [
+      // Unit 1: Introduction to Python
+      {
+        question: "What is Python mostly known for?",
+        options: [
+          "Being complicated",
+          "Being easy to read and use",
+          "Running only on mobile phones",
+          "Only working for games",
+        ],
+        correctAnswer: "Being easy to read and use",
+      },
+      {
+        question:
+          "Which website allows you to write Python code directly in your browser without downloads?",
+        options: ["Python.org", "Trinket", "Photoshop", "AWS"],
+        correctAnswer: "Trinket",
+      },
+
+      // Unit 2: Data Types and Conditionals
+      {
+        question: "Which of the following is a Boolean value in Python?",
+        options: ["True", "Maybe", "Yes", "1"],
+        correctAnswer: "True",
+      },
+      {
+        question: "What operator is used to check if two values are NOT equal?",
+        options: ["!=", "==", "<>", "="],
+        correctAnswer: "!=",
+      },
+
+      // Unit 3: Lists, Tuples, Sets, Dictionaries
+      {
+        question:
+          "Which data structure is used to store items without a specific order and no duplicates?",
+        options: ["List", "Tuple", "Set", "Dictionary"],
+        correctAnswer: "Set",
+      },
+      {
+        question:
+          'What will this code print?\n\n```python\ncolors = ["red", "blue", "green"]\nprint(colors[-1])\n```',
+        options: ["red", "green", "blue", "Error"],
+        correctAnswer: "green",
+      },
+
+      // Unit 4: Functions and Parameters
+      {
+        question: "Which keyword is used to send a value out of a function?",
+        options: ["send", "export", "return", "output"],
+        correctAnswer: "return",
+      },
+      {
+        question:
+          "What happens if you call a function without parentheses (for example, `greet` instead of `greet()`)?",
+        options: [
+          "It runs normally",
+          "It prints nothing",
+          "It gives you an error",
+          "It gives you a reference to the function",
+        ],
+        correctAnswer: "It gives you a reference to the function",
+      },
+
+      // Unit 5: More Data Structures
+      {
+        question: "Which symbol is used to create a dictionary?",
+        options: ["{}", "[]", "()", "<>"],
+        correctAnswer: "{}",
+      },
+
+      // Unit 6: Built-in Functions and Libraries
+      {
+        question:
+          "Which library must you import to use advanced math functions like square roots?",
+        options: ["random", "math", "numpy", "calculator"],
+        correctAnswer: "math",
+      },
+      {
+        question:
+          'What is the output of this code?\n\n```python\nprint(type("Hello"))\n```',
+        options: ["<class 'str'>", "<string>", "str", "String"],
+        correctAnswer: "<class 'str'>",
+      },
+
+      // Unit 7: Turtle Mini-Project
+      {
+        question:
+          "Which turtle command lifts the pen up so the turtle can move without drawing?",
+        options: ["penup()", "stopdraw()", "lift()", "movefree()"],
+        correctAnswer: "penup()",
+      },
+      {
+        question: "Which command moves the turtle backward?",
+        options: [
+          "turtle.back()",
+          "turtle.backward()",
+          "turtle.return()",
+          "turtle.reverse()",
+        ],
+        correctAnswer: "turtle.backward()",
+      },
+
+      // Unit 8: Random and Final Project Topics
+      {
+        question:
+          "Which function generates a random integer between two values?",
+        options: [
+          "random.pick()",
+          "random.choice()",
+          "random.randint()",
+          "random.int()",
+        ],
+        correctAnswer: "random.randint()",
+      },
+      {
+        question:
+          'What does this code do?\n\n```python\nimport random\ncolors = ["red", "blue", "green"]\nprint(random.choice(colors))\n```',
+        options: [
+          "Picks and prints a random color",
+          "Sorts the list",
+          "Prints all the colors",
+          "Gives an error",
+        ],
+        correctAnswer: "Picks and prints a random color",
       },
     ],
   },

@@ -325,6 +325,7 @@ export const courseStructure: Record<string, Unit> = {
       {
         id: "2.1",
         title: "2.1 Strings, Numbers, and Booleans",
+        videoUrl: "https://www.youtube.com/embed/6H4S-PfBtzs",
         content: `
         <p>Now that you’ve written your first Python code, you're ready to unlock the building blocks of every program: <strong>data types</strong>! In this lesson, you’ll meet three of the most important ones: <strong>Strings</strong>, <strong>Numbers</strong>, and <strong>Booleans</strong>.</p>
 
@@ -739,6 +740,7 @@ export const courseStructure: Record<string, Unit> = {
       {
         id: "3.1",
         title: "3.1 Introduction to if-else Statements",
+        videoUrl: "https://www.youtube.com/embed/A9AAp-qwtPk",
         content: `
         <h2>Helping Kiki Make After-School Decisions</h2>
        <div style="text-align: center;">
@@ -1089,6 +1091,7 @@ else:
       {
         id: "4.1",
         title: "4.1 For and While Loops",
+        videoUrl: "https://www.youtube.com/embed/iObpdDjpG-k",
         content: `
         <h2>For and While Loops</h2>
 
@@ -1790,7 +1793,7 @@ def greet():
 
 <p><strong>Try it:</strong> Define your own simple function that says hi!</p>
 
-<h3>📞 How to Call a Function</h3>
+<h3>How to Call a Function</h3>
 
 <p>Once a function is defined, you can <strong>call</strong> it by using its name followed by parentheses <code>()</code>.</p>
 

@@ -65,7 +65,13 @@ function Homepage() {
             <strong>Unit 8: Final Exam</strong><br />
             Ungraded: Final Exam
           </li>
+          <li>
+            <strong>Reference:</strong><br />
+            Python Land. (n.d.). Python tutorial: Learn Python programming from scratch. Retrieved April 27, 2025, from https://python.land/python-tutorial
+          </li>
         </ul>
+
+  
       </section>
 
       <Link to="/unit1/1.1">

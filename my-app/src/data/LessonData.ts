@@ -24,6 +24,7 @@ export const courseStructure: Record<string, Unit> = {
       {
         id: "1.1",
         title: "1.1 Introduction to Python",
+        videoUrl: "https://www.youtube.com/embed/NPkuIk35ht4",
         content: `
           <h2>What is Python?</h2>
 
@@ -1944,8 +1945,8 @@ print("The answer is:", product)
 <p><strong>Bonus:</strong> Try asking the user for two numbers with <code>input()</code> and passing them to your function!</p>`,
       },
       {
-        id: "6.4",
-        title: "6.4 Exploring Built-in Functions and Libraries",
+        id: "6.3",
+        title: "6.3 Exploring Built-in Functions and Libraries",
         content: `
         <h2>Exploring Built-in Functions and Libraries</h2>
 
@@ -2045,8 +2046,8 @@ print("Your random number is:", random.randint(min_num, max_num))
 <p><strong>You’re not just learning to code—you’re learning how to work smarter, faster, and stronger with Python’s secret gadgets! Keep exploring!</strong></p>`,
       },
       {
-        id: "6.5",
-        title: "6.5 Introduction to Built-in Math Functions",
+        id: "6.4",
+        title: "6.4 Introduction to Built-in Math Functions",
         content: `
         <h2>Introduction to Built-in Math Functions</h2>
 
@@ -2195,11 +2196,14 @@ print("Rounded up:", math.ceil(number))
         id: "7.1",
         title: "7.1 Getting Started with Trinket for Turtle Projects",
         content: `
-          <h2>Welcome to Trinket!</h2>
-          <p>Before you start creating amazing Turtle art, you’ll need a way to run and share your Python code online. That’s where <a href="https://trinket.io/" target="_blank">Trinket</a> comes in!</p>
+          <h2>Welcome to Trinket with Nuevo Foundation!</h2>
+          <p>Before you start creating amazing Turtle art, you’ll need a way to run and share your Python code online. That’s where <a href="https://trinket.io/" target="_blank">Trinket</a> and <a href="https://workshops.nuevofoundation.org/python-turtle/" target="_blank">Nuevo Foundation's Turtle Workshop</a> come in!</p>
       
           <h3> What is Trinket?</h3>
           <p>Trinket is a free, web-based platform that lets you write and run Python code right in your browser—no downloads needed. It’s especially useful for Turtle graphics because it supports <code>import turtle</code> and lets you see your drawings instantly.</p>
+
+          <h3>Follow Along with Nuevo Foundation!</h3>
+          <p>We're using the <a href="https://workshops.nuevofoundation.org/python-turtle/" target="_blank">Nuevo Foundation Python Turtle Workshop</a> to guide you through creative coding projects. It's full of great examples and ideas!</p>
       
           <h3>How to Get Started:</h3>
           <ol>
@@ -2212,12 +2216,12 @@ print("Rounded up:", math.ceil(number))
           <h3>Why Use Trinket?</h3>
           <ul>
             <li>It’s free to use</li>
-            <li>Works in any browser—no installation</li>
+            <li>Works in any browser—no installation needed</li>
             <li>Perfect for Turtle graphics projects</li>
             <li>You can share your work with a simple link!</li>
           </ul>
       
-          <p>Now that you’re set up on Trinket, you’re ready to dive into creative coding with Turtle!</p>
+          <p>Now that you’re set up on Trinket and ready to follow the Nuevo Foundation's workshop, you’re ready to dive into creative coding with Turtle!</p>
         `,
       },
       {
@@ -2225,7 +2229,7 @@ print("Rounded up:", math.ceil(number))
         title:
           "7.2 Create Your Own Turtle Art with Loops, Functions, and Random Colors",
         content: `
-          <h2>Welcome to Your Final Turtle Art Challenge!</h2>
+          <h2>Welcome to Your Final Turtle Art Challenge with Nuevo Foundation!</h2>
           <p>In this lesson, you'll put your coding skills to work by designing a unique drawing using <strong>loops</strong>, <strong>functions</strong>, and the <strong><code>random</code> module</strong>.</p>
   
           <h3>Quick Reminder: <code>import random</code></h3>
@@ -2253,6 +2257,9 @@ print("Rounded up:", math.ceil(number))
             <li>Apply <strong><code>random.choice()</code></strong> to change colors each time</li>
             <li>Add your own twist—it's your project!</li>
           </ul>
+
+          <h3>Need More Ideas?</h3>
+          <p>Check out the <a href="https://workshops.nuevofoundation.org/python-turtle/" target="_blank">Nuevo Foundation Python Turtle Workshop</a> for even more creative project inspiration!</p>
   
           <p>Have fun and get creative! When you're done, show off your design to the class or your family!</p>
         `,

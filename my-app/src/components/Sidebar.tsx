@@ -1,14 +1,14 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import { courseStructure } from '../data/LessonData';
-import { useState } from 'react';
-import './Sidebar.css';
+import { NavLink, useLocation } from "react-router-dom";
+import { courseStructure } from "../data/LessonData";
+import { useState } from "react";
+import "./Sidebar.css";
 
 function Sidebar() {
   const location = useLocation();
   const [openUnit, setOpenUnit] = useState<string | null>(null);
 
   const toggleUnit = (unitId: string) => {
-    setOpenUnit(prev => (prev === unitId ? null : unitId));
+    setOpenUnit((prev) => (prev === unitId ? null : unitId));
   };
 
   return (
@@ -25,9 +25,16 @@ function Sidebar() {
                   onClick={() => toggleUnit(unitId)}
                   className="toggle-arrow"
                 >
-                  {isOpen ? '▼' : '▶'}
+                  {isOpen ? "▼" : "▶"}
                 </button>
-                <NavLink to={`/${unitId}/${unit.lessons[0].id}`} className="unit-link">
+                <NavLink
+                  to={
+                    unitId === "unit8"
+                      ? `/${unitId}/quiz` // Direct to Final Exam for Unit 8
+                      : `/${unitId}/${unit.lessons[0]?.id || ""}` // Normal for other units
+                  }
+                  className="unit-link"
+                >
                   {unit.title}
                 </NavLink>
               </div>
@@ -39,7 +46,7 @@ function Sidebar() {
                     <li key={lesson.id}>
                       <NavLink
                         to={`/${unitId}/${lesson.id}`}
-                        className={({ isActive }) => (isActive ? 'active' : '')}
+                        className={({ isActive }) => (isActive ? "active" : "")}
                       >
                         {lesson.title}
                       </NavLink>
@@ -49,7 +56,7 @@ function Sidebar() {
                     <li key={`${unitId}-quiz`}>
                       <NavLink
                         to={`/${unitId}/quiz`}
-                        className={({ isActive }) => (isActive ? 'active' : '')}
+                        className={({ isActive }) => (isActive ? "active" : "")}
                       >
                         📘 Quiz
                       </NavLink>

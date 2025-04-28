@@ -75,7 +75,7 @@ export const courseStructure: Record<string, Unit> = {
         title: "1.2 Writing to the Console",
         content: `
           <h2>Writing to the Console (print statements)</h2>
-
+          <p>In Python, a print statement (more precisely, a print() function) is used to output text, numbers, or other information to the console (the screen).</p>
             <p>Imagine you're texting a friend—you type a message and it shows up on their phone. In Python, the <strong>console</strong> is like your program’s "text messages" to you. It's where your code says, "Hey! Here’s what's happening!"</p>
 
             <p>To send a message from your program to the console, we use the <code>print()</code> function. It tells Python, "Show this on the screen."</p>
@@ -217,7 +217,7 @@ export const courseStructure: Record<string, Unit> = {
         id: "1.5",
         title: "1.5 Reading User Input from the Console",
         content: `
-          <h2>Reading User Input from the Console</h2>
+        <h2>Reading User Input from the Console</h2>
 
       <p>Until now, your Python programs have talked to <em>you</em>. Now it's time for <strong>you to talk back</strong>! Using <code>input()</code>, you can ask the user questions and store their answers in variables.</p>
 
@@ -750,7 +750,16 @@ export const courseStructure: Record<string, Unit> = {
     style="max-width: 50%; margin: 0 auto; display: block; object-fit: contain;" />
 </div>
 
-<p>Imagine you're helping Kiki after school: if she's tired, she goes home; if she's not tired, she hangs out with her best friend!</p>
+<p>Now that we know how to <strong>print messages</strong>, <strong>store information in variables</strong>, and <strong>ask the user for input</strong>, we’re ready to level up by learning about <strong>conditional statements</strong>!</p>
+
+<p>Conditional statements allow a program to <strong>make decisions</strong> based on different situations — just like we do in real life.</p>
+
+<p>Whenever you check something like, "Is it raining?" or "Do I have enough money?" and then act differently based on the answer, you are using <strong>conditions</strong>!</p>
+
+<p>In Python, conditional statements help our programs become <strong>smart and flexible</strong> — they can <strong>choose different paths</strong> instead of doing the same thing every time.</p>
+
+<p>Get ready — with conditionals, your code will start thinking and making decisions all on its own! </p>
+<p>Now- image you're helping Kiki after school: if she's tired, she goes home; if she's not tired, she hangs out with her best friend!</p>
 
 <p>In Python, you can make your program make <strong>decisions</strong> using <strong>if-else statements</strong>. It’s how your code asks questions and chooses what to do based on the answers!</p>
 
@@ -1430,6 +1439,7 @@ for name in birthdays:
         id: "5.1",
         title:
           "5.1 Introduction to lists: Indexing, Slicing, and Modifying Elements",
+        videoUrl: "https://www.youtube.com/embed/SDrVd14zcMQ",
         content: `
         <h2>Introduction to Lists: Indexing, Slicing, and Modifying Elements</h2>
 
@@ -1771,8 +1781,17 @@ print("Heroes only I picked:", my_heroes - friend_heroes)
         title: "6.1 Defining and Calling Functions",
         content: `
         <h2>Defining and Calling Functions</h2>
+<p>In Python, to create a function, we start with the <strong>def</strong> keyword. This tells Python that we are about to define a new function.</p>
 
-<p>Imagine every time you wanted to make a sandwich, you had to explain every single step again. Exhausting, right?</p>
+<p>After <strong>def</strong>, we write the <strong>name of the function</strong> — this is how we will call or use the function later in our program. Right after the name, we add parentheses <code>()</code>. If the function needs information to do its job, we place that information inside the parentheses — these are called <strong>parameters</strong>.</p>
+
+<p>Parameters help us make functions flexible and reusable. If no information is needed, we can leave the parentheses empty. Don't forget: every function definition must end with a colon <code>:</code>!</p>
+
+<p>The code that should run when the function is called must be written <strong>indented</strong> under the function definition. In Python, indentation (usually one tab or four spaces) is very important — it shows which lines belong to the function.</p>
+
+<p>Every indented line after the function definition will be executed whenever you call the function. Writing clean, properly indented functions helps organize your code and makes it much easier to reuse!</p>
+
+<p>Now-imagine every time you wanted to make a sandwich, you had to explain every single step again. Exhausting, right?</p>
 
 <p>What if you could just say, "Make a sandwich!" and all the steps happened automatically?</p>
 
@@ -1811,8 +1830,6 @@ greet()
   <li>They make programs <strong>easier to read</strong> </li>
   <li>They let you <strong>break down big problems</strong> into smaller steps </li>
 </ul>
-
-<p><strong>Every big app, game, and website you love is built with thousands of tiny functions working together!</strong> </p>
 
 <h3>Try it: Create a Simple Function</h3>
 

@@ -35,7 +35,7 @@ function Homepage() {
         <ul style={{ textAlign: 'left', lineHeight: '1.8', paddingLeft: '20px' }}>
           <li>
             <strong>Unit 1: Introduction to Python and Trinket</strong><br />
-            Set up Trinket, write your first print statements, add comments, use variables, and read input from users.
+            Write your first print statements, add comments, use variables, and read input from users.
           </li>
           <li>
             <strong>Unit 2: Data Types</strong><br />
@@ -58,16 +58,12 @@ function Homepage() {
             Create reusable code with functions, explore parameters and return values, and use Python’s built-in functions.
           </li>
           <li>
-            <strong>Unit 7: Debugging and Problem-Solving</strong><br />
-            Practice debugging, identify common errors, and break down problems.
-          </li>
-          <li>
-            <strong>Unit 8: Coding with Turtle</strong><br />
+            <strong>Unit 7: Coding with Turtle</strong><br />
             Students will learn to use the Turtle graphics library to create visual art and animations, applying their coding skills in a fun and creative way.
           </li>
           <li>
-            <strong>Unit 9: Final Projects</strong><br />
-            Student's projects.
+            <strong>Unit 8: Final Exam</strong><br />
+            Ungraded: Final Exam
           </li>
         </ul>
       </section>
